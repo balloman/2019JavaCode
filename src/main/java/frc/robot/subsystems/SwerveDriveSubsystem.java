@@ -54,10 +54,6 @@ public class SwerveDriveSubsystem extends SubsystemBase {
         rotationEncoders.put(FL, new AnalogInput(1));
         rotationEncoders.put(BL, new AnalogInput(2));
         rotationEncoders.put(BR, new AnalogInput(3));
-        for (var encoder :
-                rotationEncoders.keySet()) {
-            System.out.println("Analog Input created at: " + rotationEncoders.get(encoder).getChannel());
-        }
 
         for (var wheel :
                 rotationMotors.keySet()) {

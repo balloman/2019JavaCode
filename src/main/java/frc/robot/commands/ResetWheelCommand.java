@@ -4,7 +4,9 @@ import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.Constants;
 import frc.robot.subsystems.SwerveDriveSubsystem;
 
-
+/**
+ * DONT RUN THIS LOL
+ */
 public class ResetWheelCommand extends CommandBase {
     private final SwerveDriveSubsystem swerveDriveSubsystem;
 
@@ -39,6 +41,5 @@ public class ResetWheelCommand extends CommandBase {
 
     @Override
     public void end(boolean interrupted) {
-        swerveDriveSubsystem.resetEncoders();
     }
 }
