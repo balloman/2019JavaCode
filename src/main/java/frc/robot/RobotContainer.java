@@ -56,6 +56,7 @@ public class RobotContainer
     private void configureButtonBindings()
     {
         JoystickButton combo = new JoystickButton(xboxController, XboxController.Button.kA.value);
+        //Comment the next line to disable the calibration command
         combo.whenReleased(new CalibrateCommand(swerveDriveSubsystem));
         new JoystickButton(xboxController, XboxController.Button.kBumperRight.value)
                 .whenReleased(new ResetNavCommand(navXSubsystem));
